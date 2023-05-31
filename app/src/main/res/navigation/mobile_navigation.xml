@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.my_nav.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_business"
+        android:name="com.example.my_nav.ui.gallery.BusinessFragment"
+        android:label="Business"
+        tools:layout="@layout/fragment_business" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.my_nav.ui.slideshow.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.my_nav.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_email"
+        android:name="com.example.my_nav.EmailFragment"
+        android:label="Email"
+        tools:layout="@layout/fragment_email" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.my_nav.ShareFragment"
+        android:label="Share"
+        tools:layout="@layout/fragment_share" />
+</navigation>
